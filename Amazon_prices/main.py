@@ -1,4 +1,4 @@
-from data import *
+from data import data
 from utilities import Help as help
 from datetime import datetime
 
