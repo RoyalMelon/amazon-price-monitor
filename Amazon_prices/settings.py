@@ -1,1 +1,1 @@
-HEADERS = {"ADD USER AGENT"}
+HEADERS = {"Add USER-AGENT from http://httpbin.org/get"}
