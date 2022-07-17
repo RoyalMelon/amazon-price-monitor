@@ -2,6 +2,8 @@ from data import data
 from utilities import Help as help
 from datetime import datetime
 
+from time import sleep
+
 
 def main():
     while True:
@@ -13,11 +15,9 @@ def main():
                 for index in range(len(item)):
                     help.is_sale(item[index])
 
-        # loops throught the values 0-12 in steps of twos
-        # So that program runs every two hours
-        for hour in range(0, 14, 2):
-            if time == f'{hour}:00:00':
-                run_program()
+        # Program runs every two hours
+        run_program()
+        sleep(7200)
 
 
 if __name__ == '__main__':
