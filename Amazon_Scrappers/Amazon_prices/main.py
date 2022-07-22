@@ -4,15 +4,16 @@ from time import sleep
 
 
 def main():
+    
+    def run_program():
+        for item in data:
+            for index in range(len(item)):
+                help.is_sale(item[index])
+                
+                
+    one_day = 86400
     while True:
-
-        def run_program():
-            for item in data:
-                for index in range(len(item)):
-                    help.is_sale(item[index])
-
         run_program()
-        one_day = 86400
         sleep(one_day)
         
 
