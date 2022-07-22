@@ -14,7 +14,7 @@ def main():
             webhook_url = os.getenv('URL')
             webhook = DiscordWebhook(url=webhook_url)
 
-            description = f'Price: {info[1]}\nOriginal Price: {info[2]}\nDiscount: -{info[3]}%'
+            description = f'Price: £{info[1]}\nOriginal Price: £{info[2]}\nDiscount: -{info[3]}%'
             # create embed object for webhook
             embed = DiscordEmbed(
                 title=info[0], description=description, url=info[4], color='03b2f8')
